@@ -20,10 +20,6 @@ This repository represents the work that is done in Northeastern University's Sp
 
 *lecture-1*: The basics of Java, such as primitives, class constructors, and methods.
 
----
-
-
-
 
 
 

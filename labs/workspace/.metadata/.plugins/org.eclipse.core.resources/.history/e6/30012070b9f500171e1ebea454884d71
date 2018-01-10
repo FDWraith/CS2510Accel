@@ -1,0 +1,68 @@
+interface IResource { }
+
+class Coin implements IResource {
+  String material;
+  int value;
+  
+  Coin( String material, int value ) {
+    this.material = material;
+    this.value = value;
+  }
+}
+
+class VictoryToken implements IResource {
+  String type;
+  int value;
+  
+  VictoryToken( String type, int value ) {
+    this.type = type;
+    this.value = value; 
+  }
+}
+
+class Card implements IResource { 
+  String instructions;
+  boolean grantsBonusAction;
+  int value = 1;
+  
+  Card( String instructions, boolean grant ) {
+    this.instructions = instructions;
+    this.grantsBonusAction = grant;
+  }
+}
+
+class Purchase {
+  int cost;
+  IResource item;
+  
+  Purchase( int cost, IResource item ) {
+    this.cost = cost;
+    this.item = item;
+  }
+}
+
+class Swap {
+  IResource consumed;
+  IResource received;
+  
+  Swap( IResource consumed, IResource received ) {
+    this.consumed = consumed; 
+    this.received = received; 
+  }
+}
+
+class ExamplesGame {
+  IResource ducat = new Coin( "bronze", 5 );
+  IResource fortress = new VictoryToken( "Fortress", 2);
+  IResource mason = new Card("Play only if you have at least 3 victory points", true);
+  IResource btc = new Coin( "digital", 15000 );
+  IResource home = new VictoryToken( "Home", 2 );
+  IResource deadEnd = new Card("Forfeit. You lose.", false);
+  
+  Purchase purchase1 = new Purchase(5, ducat);
+  Purchase purchase2 = new Purchase(15000, btc);
+  
+  Swap swap1 = new Swap(fortress, home);
+  Swap swap2 = new Swap(home, deadEnd);
+}
+

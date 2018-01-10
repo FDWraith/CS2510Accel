@@ -1,0 +1,9 @@
+interface IWinterOutfit { }
+
+class BaseLayer implements IWinterOutfit {
+  String name;
+  
+  BaseLayer( String name ) {
+    this.name = name;
+  }
+}

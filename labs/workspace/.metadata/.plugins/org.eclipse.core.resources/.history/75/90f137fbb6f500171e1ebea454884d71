@@ -1,0 +1,32 @@
+class Coin {
+  String material;
+  int value;
+  
+  Coin( String material, int value ) {
+    this.material = material;
+    this.value = value;
+  }
+}
+
+class VictoryToken {
+  String type;
+  int value;
+  
+  VictoryToken( String type, int value ) {
+    this.type = type;
+    this.value = value; 
+  }
+}
+
+class Card { 
+  String instructions;
+  String grantsBonusAction;
+  int value = 1;
+  
+  Card( String instructions, String grant ) {
+    this.instructions = instructions;
+    this.grantsBonusAction = grant;
+  }
+}
+
+

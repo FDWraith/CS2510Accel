@@ -1,0 +1,10 @@
+class Coin {
+  String material;
+  int value;
+  
+  Coin( String material, int value ) {
+    this.material = material;
+    this.value = value;
+  }
+}
+

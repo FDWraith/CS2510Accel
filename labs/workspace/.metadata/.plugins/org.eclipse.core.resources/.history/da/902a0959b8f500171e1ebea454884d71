@@ -1,0 +1,56 @@
+interface IResource { }
+
+class Coin implements IResource {
+  String material;
+  int value;
+  
+  Coin( String material, int value ) {
+    this.material = material;
+    this.value = value;
+  }
+}
+
+class VictoryToken implements IResource {
+  String type;
+  int value;
+  
+  VictoryToken( String type, int value ) {
+    this.type = type;
+    this.value = value; 
+  }
+}
+
+class Card implements IResource { 
+  String instructions;
+  boolean grantsBonusAction;
+  int value = 1;
+  
+  Card( String instructions, boolean grant ) {
+    this.instructions = instructions;
+    this.grantsBonusAction = grant;
+  }
+}
+
+class Purchase {
+  int cost;
+  IResource item;
+  
+  Purchase( int cost, IResource item ) {
+    this.cost = cost;
+    this.item = item;
+  }
+}
+
+class Swap {
+  IResource consumed;
+  IResource received;
+  
+  Swap( IResource consumed, IResource received ) {
+    if ( Math.abs( consumed.price - received.price ) <= 2) {
+      this.consumed = consumed;
+      this.received = received;
+    }
+  }
+}
+
+

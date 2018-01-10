@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+/home/fdwraith/Github/CS2510Accel/labs/workspace/.metadata/.plugins/org.eclipse.jdt.core
+2730973681.index
+2926646759.index

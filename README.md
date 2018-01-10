@@ -6,13 +6,20 @@ This repository represents the work that is done in Northeastern University's Sp
 
 **hw**
 
+*hw-1*: The basics of classes
 
+-  ```Painting.java``` - A simple painting class to represent information about a painting
+- ```WinterOutfit.java``` - Using interfaces to represent unions, this class represents the winter outfit as a ```BaseLayer``` with layers of ```Covering```. 
+- ```ExamplesGame.java``` - The beginnings of a game, with ```IResource``` to represent resources and ```IAction``` to represent actions the player can take.
+- ```BouncingBalls.java``` - A simulation of bouncing balls. 
 
 ---
 
 **labs**
 
+*lab-1*: Setup for Eclipse, and beginning to work with classes. 
 
+- ```Shapes.java``` - sample file handed out to experiment with classes and interfaces. 
 
 ---
 

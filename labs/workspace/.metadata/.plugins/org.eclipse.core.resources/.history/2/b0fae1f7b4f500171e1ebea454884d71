@@ -1,0 +1,38 @@
+interface IWinterOutfit { }
+
+class BaseLayer implements IWinterOutfit {
+  String name;
+  
+  BaseLayer( String name ) {
+    this.name = name;
+  }
+}
+
+class MoreWarmth implements IWinterOutfit {
+  IWinterOutfit inner;
+  String description;
+ 
+  MoreWarmth( IWinterOutfit inner, String description ) {
+    this.inner = inner;
+    this.description = description;
+  }
+}
+
+class ExamplesWinterOutfit {
+  
+  IWinterOutfit leggings = new BaseLayer("leggings");
+  IWinterOutfit sweatpants = new MoreWarmth(leggings, "sweatpants");
+  IWinterOutfit skiPants = new MoreWarmth(sweatpants, "ski pants");
+  IWinterOutfit boots = new MoreWarmth(skiPants, "boots");
+  
+  IWinterOutfit skiing = boots;
+  
+  IWinterOutfit shirt = new BaseLayer("shirt");
+  IWinterOutfit vest = new MoreWarmth(shirt, "vest");
+  IWinterOutfit suitJacket = new MoreWarmth(vest, "suit jacket");
+  IWinterOutfit topCoat = new MoreWarmth(suitJacket, "top coat");
+  IWinterOutfit scarf = new MoreWarmth(topCoat, "scarf");
+  
+  IWinterOutfit formalwear = scarf;
+  
+}

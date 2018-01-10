@@ -1,0 +1,25 @@
+interface IWinterOutfit { }
+
+class BaseLayer implements IWinterOutfit {
+  String name;
+  
+  BaseLayer( String name ) {
+    this.name = name;
+  }
+}
+
+class MoreWarmth implements IWinterOutfit {
+  IWinterOutfit inner;
+  String description;
+ 
+  MoreWarmth( IWinterOutfit inner, String description ) {
+    this.inner = inner;
+    this.description = description;
+  }
+}
+
+class ExamplesWinterOutfit {
+  
+  
+  
+}

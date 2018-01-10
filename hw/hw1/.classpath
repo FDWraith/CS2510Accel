@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/home/fdwraith/Github/CS2510Accel/labs/jars/tester.jar"/>
 	<classpathentry kind="lib" path="/home/fdwraith/Github/CS2510Accel/labs/jars/javalib.jar"/>
+	<classpathentry kind="lib" path="/home/fdwraith/Downloads/bouncing.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

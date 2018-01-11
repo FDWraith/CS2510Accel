@@ -9,9 +9,9 @@ This repository represents the work that is done in Northeastern University's Sp
 *hw-1*: The basics of classes
 
 -  ```Painting.java``` - A simple painting class to represent information about a painting
-- ```WinterOutfit.java``` - Using interfaces to represent unions, this class represents the winter outfit as a ```BaseLayer``` with layers of ```Covering```. 
-- ```ExamplesGame.java``` - The beginnings of a game, with ```IResource``` to represent resources and ```IAction``` to represent actions the player can take.
-- ```BouncingBalls.java``` - A simulation of bouncing balls. 
+-  ```WinterOutfit.java``` - Using interfaces to represent unions, this class represents the winter outfit as a ```BaseLayer``` with layers of ```Covering```. 
+-  ```ExamplesGame.java``` - The beginnings of a game, with ```IResource``` to represent resources and ```IAction``` to represent actions the player can take.
+-  ```BouncingBalls.java``` - A simulation of bouncing balls. 
 
 ---
 
@@ -27,7 +27,9 @@ This repository represents the work that is done in Northeastern University's Sp
 
 *lecture-1*: The basics of Java, such as primitives, class constructors, and methods.
 
+*lecture-2*: Using Interfaces to represent union data
 
+*lecture-3*: Incorporating methods in Interfaces
 
 
 

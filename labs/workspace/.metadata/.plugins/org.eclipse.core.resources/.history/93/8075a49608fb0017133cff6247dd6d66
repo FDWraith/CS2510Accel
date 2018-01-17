@@ -1,0 +1,232 @@
+/*
+TEMPLATE
+--------
+Fields:
+... this.name ...           -- String
+... this.features ...       -- ILoFeature
+*/
+class Place {
+  String name;
+  ILoFeature features;
+
+  Place(String name, ILoFeature features) {
+    this.name = name;
+    this.features = features;
+  }
+  
+  double sumRatings() { 
+    return features.sumRatings();
+  }
+  
+  int countRestaurants() {
+    return features.countRestaurants();
+  }
+  
+  double foodinessRating() {
+    return this.sumRatings() / this.countRestaurants(); 
+  }
+  
+  String restaurantInfo() {
+    return features.restaurantInfo();
+  }
+}
+
+interface IFeature { 
+  double getRating();
+  int countRestaurant();
+  String restaurantInfo();
+}
+
+/*
+TEMPLATE:
+---------
+Fields:
+... this.name ...                              -- String
+... this.type ...                              -- String
+... this.averageRating ...                     -- double
+Methods:
+... this.count() ...                           -- int
+... this.salePrice(int discount) ...           -- double
+... this.allBefore(int year) ...               -- ILoBook
+Methods for Fields:
+... this.rest.count() ...                      -- int
+... this.rest.salePrice(int discount) ...      -- double
+... this.rest.allBefore(int year) ...          -- ILoBook
+ */
+//To represent a resturant 
+class Restaurant implements IFeature {
+  String name;
+  String type;
+  double averageRating;
+
+  Restaurant( String name, String type, double rating ) {
+    this.name = name;
+    this.type = type;
+    this.averageRating = rating; 
+  }
+  
+  public double getRating() {
+    return this.averageRating;
+  }
+  
+  public int countRestaurant() {
+    return 1;
+  }
+  public String restaurantInfo() {
+    return this.name + " (" + this.type + "), ";
+  }
+}
+
+ 
+/*
+TEMPLATE:
+---------
+Fields:
+... this.name ...                              -- String
+... this.type ...                              -- String
+... this.capacity ...                          -- int
+Methods:
+... this.count() ...                           -- int
+... this.salePrice(int discount) ...           -- double
+... this.allBefore(int year) ...               -- ILoBook
+Methods for Fields:
+... this.rest.count() ...                      -- int
+... this.rest.salePrice(int discount) ...      -- double
+... this.rest.allBefore(int year) ...          -- ILoBook
+ */
+//to represent a venue
+class Venue implements IFeature {
+  String name;
+  String type;
+  int capacity;
+
+  Venue( String name, String type, int capacity ) {
+    this.name = name;
+    this.type = type;
+    this.capacity = capacity;
+  }
+  
+  public double getRating() {
+    return 0;
+  }
+  public int countRestaurant() {
+    return 0;
+  }
+  public String restaurantInfo() {
+    return "";
+  }
+  
+}
+
+/*
+TEMPLATE
+--------
+Fields:
+... this.name ...           -- String
+... this.destination ...    -- Place
+ */
+//to represent shuttle bus
+class ShuttleBus implements IFeature {
+  String name;
+  Place destination;
+
+  ShuttleBus(String name, Place destination) {
+    this.name = name;
+    this.destination = destination;
+  }
+  
+  public double getRating() {
+    return destination.sumRatings();
+  }
+  public int countRestaurant() {
+    return destination.countRestaurants();
+  }
+  public String restaurantInfo() {
+    return destination.restaurantInfo();
+  }
+ }
+
+interface ILoFeature {
+  double sumRatings();
+  int countRestaurants();
+}
+
+// to represent empty list of feature
+class MtLoFeature implements ILoFeature {
+  public double sumRatings() {
+    return 0.0;
+  }
+  
+  public int countRestaurants() {
+    return 0;
+  }
+}
+
+/*
+ TEMPLATE
+ --------
+ Fields:
+ ... this.first ...              -- IFeature
+ ... this.rest ...               -- ILoFeature
+ */
+// to represent non-empty list of features
+class ConsLoFeature implements ILoFeature {
+  IFeature first;
+  ILoFeature rest;
+  
+  ConsLoFeature(IFeature first, ILoFeature rest) {
+    this.first = first;
+    this.rest = rest;
+  }
+  
+  public double sumRatings() {
+    return this.first.getRating() + this.rest.sumRatings();
+  }
+  
+  public int countRestaurants() { 
+    return this.first.countRestaurant + this.rest.countRestaurants();
+  }
+}
+
+class ExamplesPlaces {
+  ILoFeature mtLoFeature = new MtLoFeature();
+  
+  IFeature tdGarden = new Venue( "TD Garden", "stadium", 19580 );
+  IFeature mikePastry = new Restaurant( "Mike's Pastry", "cannolis", 4.3 );  
+  ILoFeature neFeatures = new ConsLoFeature( tdGarden,
+                          new ConsLoFeature( mikePastry, 
+                              mtLoFeature ));
+  Place northEnd = new Place( "North End", neFeatures );
+
+  IFeature freshman15 = new ShuttleBus( "Freshmen-15", northEnd );
+  IFeature legalSea = new Restaurant( "Legal Sea Foods", "seafood", 3.9 );
+  IFeature harvardStadium = new Venue( "Harvard Stadium","football", 30323 );
+  ILoFeature harvardFeatures = new ConsLoFeature( freshman15,
+                               new ConsLoFeature( legalSea,
+                               new ConsLoFeature( harvardStadium,
+                                   mtLoFeature )));
+  Place harvard = new Place( "Harvard", harvardFeatures );
+  
+  IFeature northEndShuttle = new ShuttleBus("Little Italy Express",northEnd);
+  IFeature auntieAnnes = new Restaurant("Auntie Anne's", "pretzels",4.0);
+  IFeature harvardShuttle = new ShuttleBus("Crimson Cruiser",harvard);
+  IFeature bostonCommon = new Venue("Boston Common","public",150000);
+  ILoFeature southStationFeatures = new ConsLoFeature(northEndShuttle,
+                                    new ConsLoFeature(auntieAnnes,
+                                    new ConsLoFeature(harvardShuttle,
+                                    new ConsLoFeature(bostonCommon,
+                                        mtLoFeature))));
+  Place southStation = new Place("South Station",southStationFeatures);
+  
+  IFeature quiznos = new Restaurant("Quiznos","sandwiches",3.2);
+  IFeature starbucks = new Restaurant("Starbuckes","coffee",4.1);
+  IFeature airportShuttle = new ShuttleBus("airport shuttle", southStation);
+  ILoFeature loganAirportFeatures = new ConsLoFeature(quiznos,
+                                    new ConsLoFeature(starbucks,
+                                    new ConsLoFeature(airportShuttle, 
+                                        mtLoFeature)));
+  Place loganAirport = new Place("Logan airport",loganAirportFeatures);
+  
+  
+  
+}

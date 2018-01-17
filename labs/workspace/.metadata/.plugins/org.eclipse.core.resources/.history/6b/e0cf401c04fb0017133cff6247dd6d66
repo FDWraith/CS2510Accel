@@ -1,0 +1,82 @@
+interface IFeature { }
+
+// To represent a resturant
+/*
+TEMPLATE:
+---------
+Fields:
+... this.name ...                              -- String
+... this.type ...                              -- String
+... this.averageRating ...                     -- double
+Methods:
+... this.count() ...                           -- int
+... this.salePrice(int discount) ...           -- double
+... this.allBefore(int year) ...               -- ILoBook
+Methods for Fields:
+... this.rest.count() ...                      -- int
+... this.rest.salePrice(int discount) ...      -- double
+... this.rest.allBefore(int year) ...          -- ILoBook
+ */
+class Restaurant implements IFeature {
+  String name;
+  String type;
+  double averageRating;
+
+  Restaurant( String name, String type, double rating ) {
+    this.name = name;
+    this.type = type;
+    this.averageRating = rating; 
+  }
+}
+
+// to represent a venue 
+/*
+TEMPLATE:
+---------
+Fields:
+... this.name ...                              -- String
+... this.type ...                              -- String
+... this.capacity ...                          -- int
+Methods:
+... this.count() ...                           -- int
+... this.salePrice(int discount) ...           -- double
+... this.allBefore(int year) ...               -- ILoBook
+Methods for Fields:
+... this.rest.count() ...                      -- int
+... this.rest.salePrice(int discount) ...      -- double
+... this.rest.allBefore(int year) ...          -- ILoBook
+ */
+class Venue implements IFeature {
+  String name;
+  String type;
+  int capacity;
+
+  Venue( String name, String type, int capacity ) {
+    this.name = name;
+    this.type = type;
+    this.capacity = capacity;
+  }
+}
+
+
+
+
+class ExamplesPlaces {
+
+  IFeature tdGarden = new Venue( "TD Garden", "stadium", 19580 );
+  IFeature mikePastry = new Restaurant( "Mike's Pastry", "cannolis", 4.3 );  
+  ILoFeature mtLoFeature = new MtLoFeature();
+  ILoFeature neFeatures = new ConsLoFeature( tdGarden,
+                          new ConsLoFeature( mikePastry, 
+                              mtLoFeature ));
+  Place northEnd = new Place( "North End", neFeatures );
+
+  IFeature freshman15 = new ShuttleBus( "Freshmen-15", northEnd );
+  IFeature legalSea = new Restaurant( "Legal Sea Foods", "seafood", 3.9 );
+  IFeature harvardStadium = new Venue( "Harvard Stadium","football", 30323 );
+  ILoFeature harvardFeatures = new ConsLoFeature( freshman15,
+                               new ConsLoFeature( legalSea,
+                               new ConsLoFeature( harvardStadium,
+                                   mtLoFeature )));
+  Place harvard = new Place( "Harvard", harvardFeatures );
+}

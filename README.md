@@ -31,5 +31,7 @@ This repository represents the work that is done in Northeastern University's Sp
 
 *lecture-3*: Incorporating methods in Interfaces
 
+*lecture-4*: Implementing lists using ConsLo and MtLo.
+
 
 

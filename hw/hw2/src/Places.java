@@ -202,6 +202,39 @@ class ConsLoFeature implements ILoFeature {
 class ExamplesPlaces {
   ILoFeature mtLoFeature = new MtLoFeature();
   
+  /*
+   * Example Map:
+   * Place called New York City, it has two ShuttleBuses: one is the 7 Train that takes you
+   * to Flushing; the other is the N Train that takes you to Chinatown.
+   * Flushing (which is a Place) has a Venue called Citi Field, a stadium with a capcity of 45000.
+   * It also has two ShuttleBuses, the Q26 and Q17, that both take you to Fresh Meadows.
+   * Chinatown (which is a Place) has a Restaurant called Wok Wok, with a rating of 4.9, and primarily serves 
+   * Asian cuisine. 
+   * Fresh Meadows also has a Restaurant, called Apple Bees, with a rating of 3.5, and primarily serves fast food. 
+   */
+  IFeature appleBees = new Restaurant( "Apple Bees", "fast food", 3.5 );
+  ILoFeature fmFeatures = new ConsLoFeature( appleBees, mtLoFeature );
+  Place freshMeadows = new Place( "Fresh Meadows", fmFeatures );
+  IFeature citiField = new Venue( "Citi Field", "stadium", 45000 );
+  IFeature q26 = new ShuttleBus( "Q26", freshMeadows );
+  IFeature q17 = new ShuttleBus( "Q17", freshMeadows );
+  ILoFeature flFeatures = new ConsLoFeature( citiField,
+                          new ConsLoFeature( q26,
+                          new ConsLoFeature( q17,
+                              mtLoFeature )));
+  Place flushing = new Place( "Flushing", flFeatures );
+  IFeature wokWok = new Restaurant( "Wok Wok", "asian cuisine", 4.9 );
+  ILoFeature ctFeatures = new ConsLoFeature( wokWok, mtLoFeature );
+  Place chinaTown = new Place( "ChinaTown", ctFeatures );
+  IFeature sevenTrain = new ShuttleBus( "7 Train", flushing );
+  IFeature nTrain = new ShuttleBus( "N Train", chinaTown );
+  ILoFeature mta = new ConsLoFeature( sevenTrain, 
+                   new ConsLoFeature( nTrain,
+                       mtLoFeature ));
+  Place nyc = new Place("New York City", mta);
+  
+  
+  
   IFeature tdGarden = new Venue( "TD Garden", "stadium", 19580 );
   IFeature mikePastry = new Restaurant( "Mike's Pastry", "cannolis", 4.3 );  
   ILoFeature neFeatures = new ConsLoFeature( tdGarden,

@@ -33,5 +33,9 @@ This repository represents the work that is done in Northeastern University's Sp
 
 *lecture-4*: Implementing lists using ConsLo and MtLo.
 
+*lecture-5*: Using Accumulators in an Ancestor Tree. 
+
+
+
 
 

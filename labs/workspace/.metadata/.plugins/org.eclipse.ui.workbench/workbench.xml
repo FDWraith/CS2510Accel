@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="21" version="2.0">
+<workbench progressCount="22" version="2.0">
 <workbenchAdvisor/>
 <window height="797" maximized="true" width="1022" x="1005" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -20,7 +20,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="256" y="38"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.ClassFileEditorNoSource" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditorNoSource" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -33,13 +33,28 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Places.java" partName="Places.java" path="/home/fdwraith/Github/CS2510Accel/hw/hw2/src/Places.java" title="Places.java" tooltip="hw2/src/Places.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pictures.java" partName="Pictures.java" path="/home/fdwraith/Github/CS2510Accel/hw/hw2/src/Pictures.java" title="Pictures.java" tooltip="hw2/src/Pictures.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw2/src/Pictures.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="872" selectionTopPixel="1706"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UniquePlaces.java" partName="UniquePlaces.java" path="/home/fdwraith/Github/CS2510Accel/hw/hw2/src/UniquePlaces.java" title="UniquePlaces.java" tooltip="hw2/src/UniquePlaces.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw2/src/UniquePlaces.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="13737" selectionTopPixel="6389"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Places.java" partName="Places.java" path="/home/fdwraith/Github/CS2510Accel/hw/hw2/src/Places.java" title="Places.java" tooltip="hw2/src/Places.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw2/src/Places.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5791" selectionTopPixel="2850"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9427" selectionTopPixel="3653"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.ClassFileEditorNoSource" name="Tester.class" partName="Tester.class" path="/tmp/Tester.class1679770723945962227.class" title="Tester.class" tooltip="tester.Tester" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=hw2/\/home\/fdwraith\/Github\/CS2510Accel\/hw\/jars\/tester.jar&lt;tester(Tester.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -83,6 +98,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="695" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -98,6 +114,12 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2"/>
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+</viewState>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
@@ -233,13 +255,19 @@
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
-<view id="org.eclipse.jdt.ui.JavadocView"/>
-<view id="org.eclipse.jdt.ui.SourceView"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.internal.introview"/>
-<fastViewBars/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
+<view id="org.eclipse.search.ui.views.SearchView" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29968783"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
@@ -254,7 +282,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1e0fdb2f" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="left">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1e0fdb2f" ratio="0.8695652" ratioLeft="1660" ratioRight="249" relationship="2" relative="left">
 <folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
 <page content="org.eclipse.ui.internal.introview" label="Welcome"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
@@ -266,20 +294,15 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.7110187" ratioLeft="684" ratioRight="278" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
-<page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
@@ -299,149 +322,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/lab-1/src/Shapes.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/lab-1/theme-21.epf"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw1/src/BouncingBalls.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw1/src/ExamplesGame.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw1/src/Painting.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw1/src/Ball.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditorNoSource" org.eclipse.jdt.ui.ClassFileIdentifier="=hw1/\/home\/fdwraith\/Downloads\/bouncing.jar&lt;(BouncingWorld.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/lab-1/src/Shapes.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw1/src/ExamplesGame.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw1/src/Painting.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw2/src/UniquePlaces.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditorNoSource" org.eclipse.jdt.ui.ClassFileIdentifier="=hw2/\/home\/fdwraith\/Github\/CS2510Accel\/hw\/jars\/tester.jar&lt;tester(Tester.class"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw2/src/Places.java"/>
 </editors>
-<item historyLabel="Shapes.java" index="0">
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="8531" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="10995" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="12207" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="11080" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="11083" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="7564" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="8610" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="11143" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="11180" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="11226" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="11314" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="11316" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="2810" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="3927" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="3982" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="3984" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="6857" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="6861" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="11081" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="2341" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="2388" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="1308" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="1310" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="1445" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="1576" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="2025" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="2024" y="0"/>
+</item>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="15154" y="0"/>
+</item>
+<item historyLabel="Tester.class" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="theme-21.epf" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="15154" y="0"/>
 </item>
-<item historyLabel="Shapes.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="13180" y="0"/>
 </item>
-<item historyLabel="BouncingBalls.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="11527" y="0"/>
 </item>
-<item historyLabel="ExamplesGame.java" index="3">
-<position info="not_deleted" x="880" y="5"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="13353" y="0"/>
 </item>
-<item historyLabel="ExamplesGame.java" index="3">
-<position info="not_deleted" x="893" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="13448" y="0"/>
 </item>
-<item historyLabel="ExamplesGame.java" index="3">
-<position info="not_deleted" x="880" y="5"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="13607" y="0"/>
 </item>
-<item historyLabel="ExamplesGame.java" index="3">
-<position info="not_deleted" x="956" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="13605" y="0"/>
 </item>
-<item historyLabel="ExamplesGame.java" index="3">
-<position info="not_deleted" x="897" y="5"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="13607" y="0"/>
 </item>
-<item historyLabel="Painting.java" index="4">
-<position info="not_deleted" x="622" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="14802" y="0"/>
 </item>
-<item historyLabel="BouncingBalls.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="15153" y="0"/>
 </item>
-<item historyLabel="Ball.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="15153" y="0"/>
 </item>
-<item historyLabel="Ball.java" index="5">
-<position info="not_deleted" x="371" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="14938" y="0"/>
 </item>
-<item historyLabel="Ball.java" index="5">
-<position info="not_deleted" x="465" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="15140" y="0"/>
 </item>
-<item historyLabel="BouncingBalls.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="15139" y="0"/>
 </item>
-<item historyLabel="Ball.java" index="5">
-<position info="not_deleted" x="371" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="15138" y="0"/>
 </item>
-<item historyLabel="BouncingBalls.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="13119" y="492"/>
 </item>
-<item historyLabel="Ball.java" index="5">
-<position info="not_deleted" x="2558" y="0"/>
+<item historyLabel="Places.java" index="2">
+<position info="not_deleted" x="9427" y="0"/>
 </item>
-<item historyLabel="BouncingWorld.class" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Ball.java" index="5">
-<position info="not_deleted" x="567" y="0"/>
-</item>
-<item historyLabel="Shapes.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ExamplesGame.java" index="8">
-<position info="not_deleted" x="897" y="5"/>
-</item>
-<item historyLabel="Painting.java" index="9">
-<position info="not_deleted" x="622" y="0"/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position info="not_deleted" x="5123" y="0"/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position info="not_deleted" x="6176" y="0"/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position info="not_deleted" x="5311" y="0"/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position info="not_deleted" x="5338" y="0"/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position info="not_deleted" x="5347" y="0"/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position/>
-</item>
-<item historyLabel="Places.java" index="10">
-<position info="not_deleted" x="6090" y="0"/>
-</item>
-<item active="true" historyLabel="Places.java" index="10">
-<position info="not_deleted" x="6176" y="0"/>
+<item active="true" historyLabel="UniquePlaces.java" index="0">
+<position info="not_deleted" x="13119" y="492"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -468,8 +501,17 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditorNoSource" name="Tester.class" tooltip="tester.Tester">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=hw2/\/home\/fdwraith\/Github\/CS2510Accel\/hw\/jars\/tester.jar&lt;tester(Tester.class"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Places.java" tooltip="hw2/src/Places.java">
 <persistable path="/hw2/src/Places.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UniquePlaces.java" tooltip="hw2/src/UniquePlaces.java">
+<persistable path="/hw2/src/UniquePlaces.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pictures.java" tooltip="hw2/src/Pictures.java">
+<persistable path="/hw2/src/Pictures.java"/>
 </file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditorNoSource" name="BouncingWorld.class" tooltip="BouncingWorld">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=hw1/\/home\/fdwraith\/Downloads\/bouncing.jar&lt;(BouncingWorld.class"/>

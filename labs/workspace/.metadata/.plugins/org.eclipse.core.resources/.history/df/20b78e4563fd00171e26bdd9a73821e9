@@ -1,0 +1,223 @@
+import tester.Tester;
+
+interface IPicture {
+  // to compute the overall width of this picture
+  int getWidth();
+  // to count the total number of shapes involved in making the final image
+  int countShapes();
+  // to compute how deeply operations must be nested to generate this image
+  int comboDepth();
+  // to compute how deeply operations must be nested to generate this image
+  // ACCUMULATOR: accumulates the number of nested operations in soFar
+  int comboDepthAcc( int soFar );
+}
+
+/*
+ * TEMPLATE
+ * ---------
+ * Fields:
+ * ... this.kind ...                            -- String
+ * ... this.size ...                            -- int
+ * Methods:
+ * ... this.getWidth() ...                      -- int
+ * ... this.countShapes() ...                   -- int
+ * ... this.comboDepth() ...                    -- int
+ * ... this.comboDepthAcc(int soFar) ...        -- int
+ */
+class Shape implements IPicture {
+  String kind;
+  int size; // width = height
+  
+  Shape(String kind, int size) {
+    this.kind = kind;
+    this.size = size;
+  }
+  
+  public int getWith() {
+    return size;
+  }
+  public int countShapes() {
+    return 1;
+  }
+  public int comboDepth() {
+    return 0;
+  }
+  public int comboDepthAcc( int soFar ) {
+    return soFar;
+  }
+}
+
+/*
+ * TEMPLATE
+ * ----------
+ * Fields:
+ * ... this.name ...                                -- String
+ * ... this.operation ...                           -- IOperation
+ * Methods:
+ * ... this.getWidth() ...                          -- int
+ * ... this.countShapes() ...                       -- int
+ * ... this.comboDepth() ...                        -- int
+ * ... this.comboDepthAcc(int soFar) ...            -- int
+ * Methods for fields:
+ * ... this.operation.getWidth() ...                -- int
+ * ... this.operation.countShapes() ...             -- int
+ * ... this.operation.comboDepthAcc(int soFar) ...  -- int
+ */
+class Combo implements IPicture {
+  String name;
+  IOperation operation;
+  
+  Combo(String name, IOperation operation) {
+    this.name = name;
+    this.operation = operation;
+  }
+  
+  public int getWidth() {
+    return this.operation.getWidth();
+  }
+  public int countShapes() {
+    return this.operation.countShapes();
+  }
+  public int comboDepth() {
+    return this.comboDepthAcc( 0 );
+  }
+  public int comboDepthAcc( int soFar ) {
+    return this.operation.comboDepthAcc( soFar + 1 );
+  }
+}
+
+interface IOperation {
+  // computes the overall width of the picture after this operation
+  int getWidth();
+  // computes the number of single shapes in the picture after this operation
+  int countShapes();
+  // computes how many deeply operations need to be nested to generate the picture
+  // ACCUMULATOR: soFar represents the number of operations that have come before
+  int comboDepthAcc( int soFar );
+}
+
+/*
+ * FIELDS:
+ * ... this.picture ...                             -- IPicture
+ * METHODS:
+ * ... this.getWidth() ...                          -- int
+ * ... this.countShapes() ...                       -- int
+ * ... this.comboDepthAcc(int soFar) ...            -- int
+ * METHODS ON FIELDS:
+ * ... this.picture.getWidth() ...                  -- int
+ * ... this.picture.countShapes() ...               -- int
+ * ... this.picture.comboDepth() ...                -- int
+ * ... this.picture.comboDepthAcc(int soFar) ...    -- int
+ */
+// Doubles the Size of a picture
+class Scale implements IOperation {
+  IPicture picture;
+  
+  Scale( IPicture pic ) {
+    this.picture = pic;
+  }
+  
+  public int getWidth() {
+    return 0;
+  }
+  public int countShapes() {
+    return this.picture.countShapes();
+  }
+  public int comboDepthAcc( int soFar ) {
+    return this.picture.comboDepthAcc( soFar );
+  }
+}
+
+/*
+ * FIELDS:
+ * ... this.picture1 ...               -- IPicture
+ * ... this.picutre2 ...               -- IPicture
+ * METHODS:
+ * ... this.getWidth() ...             -- int
+ * METHODS ON FIELDS:
+ * ... ...
+ */
+// Places picture2 to the right of picture1
+class Beside implements IOperation {
+  IPicture picture1;
+  IPicture picture2;
+  
+  Beside( IPicture picture1, IPicture picture2 ) {
+    this.picture1 = picture1;
+    this.picture2 = picture2;
+  }
+  
+  public int getWidth() {
+    return 0;
+  }
+  public int countShapes() {
+    return this.picture1.countShapes() + this.picture2.countShapes();
+  }
+  public int comboDepthAcc( int soFar ) {
+    return Math.max( this.picture1.comboDepthAcc(soFar),this.picture2.comboDepthAcc(soFar) );
+  }
+}
+
+/*
+ * FIELDS:
+ * ... this.topPicture ...             -- IPicture
+ * ... this.bottomPicture ...          -- IPicture
+ * METHODS:
+ * ... this.getWidth() ...             -- int
+ * METHODS ON FIELDS:
+ * ... ...
+ */
+// Places 
+class Overlay implements IOperation {
+  IPicture topPicture;
+  IPicture bottomPicture;
+  
+  Overlay( IPicture topPicture, IPicture bottomPicture ) {
+    this.topPicture = topPicture;
+    this.bottomPicture = bottomPicture;
+  }
+  
+  public int getWidth() {
+    return 0;
+  }
+  public int countShapes() {
+    return this.topPicture.countShapes() + this.bottomPicture.countShapes();
+  }
+  public int comboDepthAcc( int soFar ) {
+    return Math.max( this.bottomPicture.comboDepthAcc(soFar), this.topPicture.comboDepthAcc(soFar) );
+  }
+} 
+
+class ExamplesPicture {
+  
+  // Given example
+  IPicture circle = new Shape("circle",20);
+  IPicture square = new Shape("square",30);
+  IPicture bigCircle = new Combo("big circle", new Scale(circle));
+  IPicture squareOnCircle = new Combo ("square on circle", new Overlay(square,bigCircle));
+  IPicture doubledSquareOnCircle = new Combo ("double square on circle", new Beside(squareOnCircle,squareOnCircle));
+
+  // Our example 
+  IPicture extraSquare = new Shape( "square", 40 );
+  IPicture extraCircle = new Shape( "circle", 50 );
+  IPicture bigSquare = new Combo( "big square", new Scale(extraSquare) );
+  IPicture dotInSquare = new Combo( "dot in big square", new Overlay(extraCircle, bigSquare) );
+  IPicture dotInSquareWithSmallSquare = new Combo( "dot in big square next to small square", new Beside(dotInSquare, extraSquare) );
+  
+  // to test countShapes() 
+  boolean testCountShapes( Tester t ) {
+    return t.checkExpect(extraSquare.countShapes(), 1)
+        && t.checkExpect(bigCircle.countShapes(), 1)
+        && t.checkExpect(dotInSquare.countShapes(), 2)
+        && t.checkExpect(dotInSquareWithSmallSquare.countShapes(), 3);
+  }
+  
+  // to test comboDepth()
+  boolean comboDepth( Tester t ) {
+    return t.checkExpect( doubledSquareOnCircle.comboDepth(), 3)
+        && t.checkExpect( square.comboDepth(), 0)
+        && t.checkExpect( bigCircle.comboDepth(), 1)
+        && t.checkExpect( dotInSquare.comboDepth(), 2);
+  }
+  
+} 

@@ -1,0 +1,107 @@
+import tester.Tester;
+
+interface ILoString {
+  
+  // sorts the given list in ascending order
+  ILoString sort();
+  
+  // inserts a String into a sorted list
+  ILoString insertSorted(String entry);
+  
+  // merges two sorted lists
+  ILoString mergeSorted(ILoString entry);
+}
+
+class ConsLoString implements ILoString {
+  String first;
+  ILoString rest;
+  
+  ConsLoString( String first, ILoString rest ) {
+    this.first = first;
+    this.rest = rest;
+  }
+  
+  public ILoString sort() {
+    return this.rest.sort().insertSorted(this.first);
+  }
+  public ILoString insertSorted(String entry) {
+    if( this.first.compareTo(entry) < 0) {
+      return new ConsLoString( this.first, this.rest.insertSorted(entry) );
+    } else {
+      return new ConsLoString( entry, this );
+    }
+  }
+  
+  public ILoString mergeSorted(ILoString entry) {
+    return entry.insertSorted(this.first).mergeSorted(this.rest);
+  }
+  
+}
+
+class MtLoString implements ILoString {
+  public ILoString sort() {
+    return this;
+  }
+  public ILoString insertSorted(String entry) {
+    return new ConsLoString(entry, new MtLoString());
+  }
+  public ILoString mergeSorted(ILoString entry) {
+    return entry;
+  }
+}
+
+class SnocLoString implements ILoString {
+  ILoString front;
+  String last;
+  
+  SnocLoString( ILoString front, String last ){
+    this.front = front;
+    this.last = last;
+  }
+  
+  public ILoString sort() {
+    return this.front.sort().insertSorted(this.last);
+  }
+  public ILoString insertSorted(String entry) {
+    if( this.last.compareTo(entry) > 0 ) {
+      return new SnocLoString( this.front.insertSorted(entry), this.last );
+    } else {
+      return new SnocLoString( this, entry );
+    }
+  }
+  public ILoString mergeSorted(ILoString entry) {
+    return entry.insertSorted(this.last).mergeSorted(this.front);
+  }
+}
+
+class AppendLoString implements ILoString {
+  ILoString front;
+  ILoString back;
+  
+  AppendLoString( ILoString front, ILoString back ) {
+    this.front = front;
+    this.back = back;
+  }
+  
+  public ILoString sort() { 
+    return this.front.sort().mergeSorted(this.back.sort());
+  }
+  public ILoString insertSorted(String entry) {
+    return new AppendLoString( this.front, this.back.insertSorted(entry) );
+  }
+  public ILoString mergeSorted(ILoString entry) {
+    return entry.mergeSorted(this.front).mergeSorted(this.back);
+  }
+}
+
+class ExamplesMoreLists { 
+  ILoString mtLoString = new MtLoString();
+  ILoString one = new ConsLoString("1", mtLoString);
+  ILoString two = new ConsLoString("2", one);
+  ILoString three = new SnocLoString(two, "3");
+  ILoString four = new ConsLoString("4", mtLoString);
+  ILoString five = new AppendLoString(new SnocLoString(four, "5"), three);
+  boolean testSort(Tester t) {
+
+  }
+}

@@ -77,7 +77,10 @@ class Unknown implements IAT {
 Practice Problem from Lecture 8:
 
 ```java
-interface IDoc { }
+interface IDoc { 
+  String formatEntry();
+  ILoString formatBib();
+}
 
 class Book implements IDoc {
   String authorFirstName;
@@ -85,6 +88,14 @@ class Book implements IDoc {
   String title;
   Bibliography bib;
   String publisher;
+  
+  public String formatEntry() {
+    return this.authorLastName + ", " + this.authorFirstName + ". " + this.title + ".";
+  }
+  
+  public String formatBib() {
+    return this.bib.getEntries();
+  }
 }
 
 class Wiki implements IDoc {
@@ -93,23 +104,47 @@ class Wiki implements IDoc {
   String title;
   Bibliography bib;
   String url;
+  
+  public String formatEntry() {
+    return "";
+  }
+  
+  public String formatBib() {
+    return this.bib.getEntries();
+  }
 }
 
 interface ILoDocument {
-  
+  ILoString getEntries();
 }
 
 class ConsLoDocument implements ILoDocument { 
   IDoc first;
   ILoDocument rest;
+  
+  String getEntries() {
+    return new ConsLoString(this.first.formatEntry(), this.first.formatBib()).append(this.rest.getEntries()); 
+  }
 }
 
 class MtLoDocument implements ILoDocument { 
-  
+  String getEntries() {
+    return "";
+  }
 }
 
 class Bibliography { 
   ILoDocument documents;
+  
+  String getEntries() {
+    return this.documents.getEntries();
+  }
 }
+```
+
+Proposed Order of Solving Problem 1:
+
+```java
+// Doc --> ILoBook --> sort --> remove dupes --> citations
 ```
 

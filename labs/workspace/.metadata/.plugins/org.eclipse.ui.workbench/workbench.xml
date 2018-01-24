@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
 <window height="797" maximized="true" width="1022" x="1005" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -20,7 +20,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="256" y="38"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.ClassFileEditorNoSource" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditorNoSource" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -33,28 +33,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pictures.java" partName="Pictures.java" path="/home/fdwraith/Github/CS2510Accel/hw/hw2/src/Pictures.java" title="Pictures.java" tooltip="hw2/src/Pictures.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw2/src/Pictures.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="872" selectionTopPixel="1706"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UniquePlaces.java" partName="UniquePlaces.java" path="/home/fdwraith/Github/CS2510Accel/hw/hw2/src/UniquePlaces.java" title="UniquePlaces.java" tooltip="hw2/src/UniquePlaces.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw2/src/UniquePlaces.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="13737" selectionTopPixel="6389"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Places.java" partName="Places.java" path="/home/fdwraith/Github/CS2510Accel/hw/hw2/src/Places.java" title="Places.java" tooltip="hw2/src/Places.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw2/src/Places.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9427" selectionTopPixel="3653"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.ClassFileEditorNoSource" name="Tester.class" partName="Tester.class" path="/tmp/Tester.class1679770723945962227.class" title="Tester.class" tooltip="tester.Tester" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=hw2/\/home\/fdwraith\/Github\/CS2510Accel\/hw\/jars\/tester.jar&lt;tester(Tester.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MoreLists.java" partName="MoreLists.java" path="/home/fdwraith/Github/CS2510Accel/hw/hw3/src/MoreLists.java" title="MoreLists.java" tooltip="hw3/src/MoreLists.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw3/src/MoreLists.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1254" selectionTopPixel="719"/>
 </editor>
 </editors>
 <views>
@@ -98,7 +83,6 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="695" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -264,7 +248,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
 <view id="org.eclipse.search.ui.views.SearchView" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29968783"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3548387"/>
 </fastViews>
 </fastViewBar>
 </fastViewBars>
@@ -294,7 +278,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.7110187" ratioLeft="684" ratioRight="278" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
@@ -322,159 +306,157 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw2/src/UniquePlaces.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditorNoSource" org.eclipse.jdt.ui.ClassFileIdentifier="=hw2/\/home\/fdwraith\/Github\/CS2510Accel\/hw\/jars\/tester.jar&lt;tester(Tester.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw2/src/Places.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw3/src/MoreLists.java"/>
 </editors>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="8531" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="1336" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="10995" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="1829" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="1821" y="0"/>
+</item>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="1825" y="0"/>
+</item>
+<item historyLabel="MoreLists.java" index="0">
 <position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="1694" y="0"/>
+</item>
+<item historyLabel="MoreLists.java" index="0">
 <position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
+<item historyLabel="MoreLists.java" index="0">
 <position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="12207" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="11080" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="11083" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="7564" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="8610" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="11143" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="1829" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="11180" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="11226" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2765" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="11314" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="11316" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="2810" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="3927" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="3982" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="3984" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="6857" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="6861" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="11081" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="2341" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="3017" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="2388" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="3017" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="1308" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="1310" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="1445" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2753" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="1576" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="3017" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="2025" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2859" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="2024" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2225" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="15154" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2737" y="0"/>
 </item>
-<item historyLabel="Tester.class" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="3000" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="15154" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2737" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="13180" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2737" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="11527" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2951" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="13353" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2551" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="13448" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2730" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="13607" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2551" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="13605" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2730" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="13607" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2551" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="14802" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2730" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="15153" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2643" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="15153" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="2685" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="14938" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="3002" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="15140" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position info="not_deleted" x="3015" y="0"/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="15139" y="0"/>
+<item historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="15138" y="0"/>
-</item>
-<item historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="13119" y="492"/>
-</item>
-<item historyLabel="Places.java" index="2">
-<position info="not_deleted" x="9427" y="0"/>
-</item>
-<item active="true" historyLabel="UniquePlaces.java" index="0">
-<position info="not_deleted" x="13119" y="492"/>
+<item active="true" historyLabel="MoreLists.java" index="0">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -482,13 +464,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="right"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1e0fdb2f"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -501,6 +476,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MoreLists.java" tooltip="hw3/src/MoreLists.java">
+<persistable path="/hw3/src/MoreLists.java"/>
+</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditorNoSource" name="Tester.class" tooltip="tester.Tester">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=hw2/\/home\/fdwraith\/Github\/CS2510Accel\/hw\/jars\/tester.jar&lt;tester(Tester.class"/>
 </file>

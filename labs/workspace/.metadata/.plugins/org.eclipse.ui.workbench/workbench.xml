@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="17" version="2.0">
 <workbenchAdvisor/>
 <window height="797" maximized="true" width="1022" x="1005" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -37,13 +37,13 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MoreLists.java" partName="MoreLists.java" path="/home/fdwraith/Github/CS2510Accel/hw/hw3/src/MoreLists.java" title="MoreLists.java" tooltip="hw3/src/MoreLists.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw3/src/MoreLists.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1254" selectionTopPixel="719"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Automata.java" partName="Automata.java" path="/home/fdwraith/Github/CS2510Accel/hw/hw4/src/Automata.java" title="Automata.java" tooltip="hw4/src/Automata.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw4/src/Automata.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="530" selectionOffset="3156" selectionTopPixel="944"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Library.java" partName="Library.java" path="/home/fdwraith/Github/CS2510Accel/labs/workspace/lab-4/src/Library.java" title="Library.java" tooltip="lab-4/src/Library.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lab-4/src/Library.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3771" selectionTopPixel="2580"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Mastermind.java" partName="Mastermind.java" path="/home/fdwraith/Github/CS2510Accel/hw/hw5/src/Mastermind.java" title="Mastermind.java" tooltip="hw5/src/Mastermind.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw5/src/Mastermind.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12863" selectionTopPixel="7125"/>
 </editor>
 </editors>
 <views>
@@ -79,9 +79,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="695" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -301,158 +298,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw3/src/MoreLists.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/lab-4/src/Library.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw4/src/Automata.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hw5/src/Mastermind.java"/>
 </editors>
-<item historyLabel="MoreLists.java" index="0">
-<position info="not_deleted" x="3015" y="0"/>
-</item>
-<item historyLabel="MoreLists.java" index="0">
-<position/>
-</item>
-<item historyLabel="MoreLists.java" index="0">
-<position/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="4121" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="182" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="136" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="511" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="584" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="1163" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="1162" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="1343" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="550" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="212" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="657" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="694" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="306" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="742" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="775" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="777" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="813" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="839" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="916" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="1624" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="473" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="1042" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="1070" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="2553" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="2624" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
-<position info="not_deleted" x="2767" y="0"/>
-</item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="3027" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="2656" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="3307" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="3437" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="3936" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="1249" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="1277" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="2275" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="2357" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="2432" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="4060" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position info="not_deleted" x="4073" y="0"/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position/>
 </item>
-<item historyLabel="Library.java" index="1">
+<item historyLabel="Library.java" index="0">
 <position/>
 </item>
-<item active="true" historyLabel="Library.java" index="1">
-<position info="not_deleted" x="3953" y="25"/>
+<item historyLabel="Library.java" index="0">
+<position info="not_deleted" x="3771" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="3839" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="790" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="863" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="939" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="982" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="1097" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="1133" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="1194" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="1195" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="1272" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="1349" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="1387" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="1426" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="1490" y="0"/>
+</item>
+<item historyLabel="Automata.java" index="1">
+<position info="not_deleted" x="1519" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="20022" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="13186" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="19494" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="19544" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="19548" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="19604" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="19597" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="19602" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="12788" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="19643" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="19683" y="0"/>
+</item>
+<item historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="19684" y="0"/>
+</item>
+<item active="true" historyLabel="Mastermind.java" index="2">
+<position info="not_deleted" x="19691" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -472,6 +470,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Mastermind.java" tooltip="hw5/src/Mastermind.java">
+<persistable path="/hw5/src/Mastermind.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Automata.java" tooltip="hw4/src/Automata.java">
+<persistable path="/hw4/src/Automata.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Library.java" tooltip="lab-4/src/Library.java">
 <persistable path="/lab-4/src/Library.java"/>
 </file>
